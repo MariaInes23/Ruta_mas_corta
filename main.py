@@ -205,7 +205,6 @@ def cambiar_nombre_nodo(event):
     ctk.CTkButton(popup, text="Guardar", command=guardar_nombre, fg_color=button_color).pack(pady=10)
 
 def cambiar_peso_arista(event):
-    """Click rueda del mouse sobre la línea para cambiar peso (solo > 0)."""
     edge = get_edge_at_pos(event.x, event.y)
     if edge is None:
         return
